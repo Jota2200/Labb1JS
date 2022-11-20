@@ -22,6 +22,65 @@ const news = [
   },
 ];
 
+document.getElementById("ex01").innerHTML = "klar";
+
+let element = document.querySelector(".ex02");
+element.classList.add("red");
+
+document.getElementsByTagName("blockquote")[0].innerHTML =
+  "Stor i orden men liten på jorden";
+
+var li = document.createElement("li");
+li.innerHTML = "Mjölk";
+document.getElementById("shopping-list").appendChild(li);
+
+for (var i = 0; i < news.length; i++) {
+  var header = document.createElement("h3");
+  header.innerHTML = news[i].headline;
+  var showHeader = document.getElementById("news");
+  showHeader.appendChild(header);
+
+  var author = document.createElement("h4");
+  author.innerHTML = news[i].author;
+  var showAuthor = document.getElementById("news");
+  showAuthor.appendChild(author);
+
+  var anchor = document.createElement("a");
+  anchor.innerHTML = news[i].href;
+  var showLink = document.getElementById("news");
+  anchor.href = showLink.appendChild(anchor);
+
+  var summary = document.createElement("p");
+  summary.innerHTML = news[i].summary;
+  var showSummary = document.getElementById("news");
+  showSummary.appendChild(summary);
+}
+var countclicks = 0;
+document.body.onclick = function () {
+  clickFunction();
+};
+
+function clickFunction() {
+  countclicks++;
+  document.getElementById("click-counter").innerHTML = countclicks;
+}
+var count = 0;
+var button = document.querySelector("button");
+
+button.onclick = function () {
+  count++;
+
+  if (count >= 2) {
+    button.disabled = true;
+  }
+};
+
+var link = document.getElementById("link-to-svt");
+link.removeAttribute("href");
+
+document.querySelector("img").src =
+  "https://images.unsplash.com/photo-1617374128851-c84e37dc9f37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
+
 /**
  *
  * Här ska du skriva din javascript för att ändra innehållet på webbsidan.

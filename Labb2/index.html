@@ -1,0 +1,86 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="utf-8" />
+    <title>MIUN Interaktiva Labb 02: DOM</title>
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Manipulering av DOM</h1>
+
+      <p>Du ska med hjälp av JavaScript ändra innehållet på den här sidan.</p>
+
+      <p>
+        <b
+          >Du ska inte ändra något i den här filen. Allt gör du med JavaScript.
+          Däremot kan det vara ok att lägga till mer stilar i din CSS-fil</b
+        >
+      </p>
+
+      <h2>Uppgift 1</h2>
+      <p>Ändra paragraftaggen (p) nedan till 'klar'.</p>
+      <p id="ex01">TODO: Ersätt denna med klar</p>
+
+      <h2>Uppgift 2</h2>
+      <p class="ex02">
+        Byt ut så att den här texten blir röd. Tips. Undersök css-filen
+      </p>
+
+      <h2>Uppgift 3</h2>
+      <p>Ändra taggen blockQuote nedan till ditt favoritcitat.</p>
+      <blockquote>Även solen har sina fläckar</blockquote>
+
+      <h2>Uppgift 4</h2>
+      <p>Du glömde köpa mjölk! Lägg till detta till inköpslistan nedan.</p>
+      <h3>Inköpslista</h3>
+      <ul id="shopping-list">
+        <li>Socker</li>
+        <li>Bröd</li>
+        <li>Avokado</li>
+      </ul>
+
+      <h2>Uppgift 5</h2>
+      <p>
+        I filen app.js finns en variabel (konstant) som heter news. Presentera
+        innehållet i den arrayen här på webben med relevanta html-taggar. Lägg
+        till minst en css-klass. Välj då antingen den som finns från start,
+        eller skapa en egen.
+      </p>
+
+      <div id="news"></div>
+
+      <h2>Uppgift 6</h2>
+      <p>
+        Varje gång du klickar någonstans i det här dokumentet ska siffran nedan
+        uppdateras.
+      </p>
+      <span id="click-counter">0</span>
+
+      <h2>Uppgift 7</h2>
+      <p>
+        Knappen nedan ska du kunna klicka på en enda gång, därefter ska den vara
+        låst.
+      </p>
+      <button>En gång är ok, två gånger och du blir bannlyst!</button>
+
+      <h2>Uppgift 8</h2>
+      <p>
+        Förhindra att länken nedan ska fungera. När man klckar på den ska inget
+        hända.
+      </p>
+      <a id="link-to-svt" href="https://svt.se">svt.se</a>
+
+      <h2>Uppgift 9</h2>
+      <p>
+        Byt ut bilden nedan. Gå till unsplash.com, leta upp en bild du gillar
+        och byt ut.
+      </p>
+      <img
+        src="https://images.unsplash.com/photo-1550063873-ab792950096b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"
+      />
+    </main>
+  </body>
+</html>
